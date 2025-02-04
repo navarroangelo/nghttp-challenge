@@ -1,0 +1,19 @@
+<h2>Asian Countries</h2>
+<table class="country-table">
+  <thead>
+    <tr>
+      <th>Common Name</th>
+      <th>Official Name</th>
+      <th>Capital</th>
+      <th>Asian Subregion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cntry of httpcountries">
+      <td>{{ cntry.name.common }}</td>
+      <td>{{ cntry.name.official }}</td>
+      <td>{{ cntry.capital }}</td>
+      <td>{{ cntry.subregion }}</td>
+    </tr>
+  </tbody>
+</table>
